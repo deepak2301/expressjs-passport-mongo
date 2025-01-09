@@ -44,6 +44,7 @@ router.get(
 router.get("/api/users/:id", resolveIndexByUserId, (req, res) => {
   const { findUserIndex } = req;
   const findUser = mockUsers[findUserIndex];
+  if (!findUser) return res.sendStatus(404);
   return res.send(findUser);
 });
 
