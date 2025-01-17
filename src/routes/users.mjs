@@ -9,7 +9,7 @@ import {
 import { createUserValidationSchema } from "../utils/validationSchema.mjs";
 import { mockUsers } from "../utils/constants.mjs";
 import { resolveIndexByUserId } from "../utils/middleware.mjs";
-import User from "../mongoose/schemas/user.mjs";
+import { User } from "../mongoose/schemas/user.mjs";
 import { hashPassword } from "../utils/helpers.mjs";
 const router = Router();
 
